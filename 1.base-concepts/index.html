@@ -4,27 +4,30 @@
   <meta charset="utf-8">
   <title>Основные понятия</title>
 
-  <link rel="shortcut icon" type="image/png" href="../Jasmine/jasmine_favicon.png">
-  <link rel="stylesheet" href="../Jasmine/jasmine.css">
+  <!-- Если локальные файлы Jasmine не работают, используйте CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.0/jasmine.min.css">
   <link rel="stylesheet" href="../assets/css/style.css" />
 
-  <script src="../Jasmine/jasmine.js"></script>
-  <script src="../Jasmine/jasmine-html.js"></script>
-  <script src="../Jasmine/boot.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.0/jasmine.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.0/jasmine-html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.0/boot.min.js"></script>
 
-<!-- include source files here... -->
-<script type="text/javascript" src="./task.js"></script>
+  <!-- Ваш код -->
+  <script src="task.js"></script>
 
-  <!-- include spec files here... -->
-  <script type="text/javascript" src="./tests.js"></script>
+  <!-- Тесты -->
+  <script src="tests.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo__container">
-      <a href="https://netology.ru/" class="logo__link"></a>
-    </div>
-    <h1 class="header__title">Домашнее задание к лекции 1. «Основные понятия»</h1>
-  </header>
+<header class="header">
+  <div class="logo__container">
+    <a href="https://netology.ru/" class="logo__link"></a>
+  </div>
+  <h1 class="header__title">Домашнее задание к лекции 1. «Основные понятия»</h1>
+</header>
+
+<!-- КОНТЕЙНЕР ДЛЯ РЕЗУЛЬТАТОВ ТЕСТОВ -->
+<div id="jasmine"></div>
 </body>
 </html>
